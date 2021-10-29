@@ -2,6 +2,6 @@ overall_accuracy=0;
 int para_accuracy[no of paras+1];
 int para_quesxans[no of paras+1];
 for each para in dataset:
-          para_accuracy[i]=((number of matches of c1 with a1)/a1+(number of matches of c2 with a2)/a2+.......+(number of matches of cn with an)/an)
-          para_quesxans[i]=(a1+a2+.......+an)
+          (mean of accuracies)para_accuracy[i]=((number of matches of c1 with a1)/a1+(number of matches of c2 with a2)/a2+.......+(number of matches of cn with an)/an)/n (number of questions in para)
+          para_quesxans[i]=(a1+a2+.......+an) #Total number of expected correct answers from the para
 overall accuracy=((para_quesxans[0])*para_accuracy[0]+(para_quesxans[1])*para_accuracy[1]+.............+(para_quesxans[n])*para_accuracy[n])/(para_quesxans[0]+para_quesxans[1]+....para_quesxans[n])
